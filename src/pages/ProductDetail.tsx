@@ -227,7 +227,7 @@ const ProductOptionDetail = ({
                 <img
                   src={images[activeImage] || option.image}
                   alt={option.name}
-                  className="w-28 h-28 opacity-20"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex gap-3">
@@ -241,7 +241,7 @@ const ProductOptionDetail = ({
                         : "border-border hover:border-muted-foreground/30"
                     }`}
                   >
-                    <img src={img} alt="" className="w-6 h-6 opacity-20" />
+                    <img src={img} alt="" className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>
